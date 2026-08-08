@@ -20,7 +20,7 @@ export class SpiritaChatProvider implements vscode.LanguageModelChatProvider {
         const { getLlama } = await import(/* webpackIgnore: true */ 'node-llama-cpp');
         this.llama = await getLlama();
 
-        const modelPath = path.join(this.extensionPath, 'src', 'models', 'gemma-2-2b.gguf');
+        const modelPath = path.join(this.extensionPath, 'src', 'models', 'gemma-3-preview.gguf');
         if (!fs.existsSync(modelPath)) {
             throw new Error(`Offline Gemma model not found at ${modelPath}`);
         }

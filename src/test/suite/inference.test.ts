@@ -11,7 +11,7 @@ suite('Spirita Extension Offline Inference Test Suite', () => {
     
     // We expect the model to be copied to the 'dist/models' directory when built,
     // but in tests, we can access it from 'src/models'. Let's ensure the file exists.
-    const modelPath = path.resolve(__dirname, '../../../src/models/gemma-2-2b.gguf');
+    const modelPath = path.resolve(__dirname, '../../../src/models/gemma-3-preview.gguf');
     
     assert.ok(fs.existsSync(modelPath), `Model file not found at ${modelPath}`);
 

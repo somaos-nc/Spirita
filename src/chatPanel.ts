@@ -71,7 +71,7 @@ export class SpiritaChatPanel {
             const { getLlama, LlamaChatSession } = await import(/* webpackIgnore: true */ 'node-llama-cpp');
             this.llama = await getLlama();
 
-            const modelPath = path.join(this._extensionPath, 'src', 'models', 'gemma-2-2b.gguf');
+            const modelPath = path.join(this._extensionPath, 'src', 'models', 'gemma-3-preview.gguf');
             if (!fs.existsSync(modelPath)) {
                 throw new Error(`Model not found at ${modelPath}. Was it successfully downloaded?`);
             }
