@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+.vscode-test/
+
+# Build outputs
+out/
+dist/
+
+# Large Model Files (Do not commit to git, use GitHub Releases!)
+*.gguf
+src/models/
+
+# VS Code Extension Packages
+*.vsix
+*.vsix.bak
+
+# Secrets / Logs
+.env
+*.log

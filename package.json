@@ -1,0 +1,78 @@
+{
+  "name": "spirita",
+  "publisher": "spirita-org",
+  "displayName": "Spirita",
+  "description": "Inhouse/Offline LLM based on Google Gemma. Interface, Sensor, Protector.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.125.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "languageModelChatProviders": [
+      {
+        "vendor": "spirita-org",
+        "displayName": "Spirita Local"
+      }
+    ],
+    "chatParticipants": [
+      {
+        "id": "spirita-org.spirita",
+        "name": "spirita",
+        "fullName": "Spirita The Oracle",
+        "description": "I am Spirita. I help you build code, completely offline.",
+        "isSticky": true
+      }
+    ],
+    "commands": [
+      {
+        "command": "spirita.awaken",
+        "title": "Spirita: Awaken"
+      },
+      {
+        "command": "spirita.chat",
+        "title": "Spirita: Converse with the Oracle"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "compile": "webpack",
+    "watch": "webpack --watch",
+    "package": "webpack --mode production --devtool hidden-source-map",
+    "compile-tests": "tsc -p . --outDir out",
+    "watch-tests": "tsc -p . -w --outDir out",
+    "pretest": "npm run compile-tests && npm run compile && npm run lint",
+    "test": "node ./out/test/runTest.js",
+    "lint": "eslint src --ext ts"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.0",
+    "@types/node": "18.x",
+    "@types/vscode": "^1.125.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@vscode/test-electron": "^3.1.0",
+    "@vscode/vsce": "^3.9.2",
+    "copy-webpack-plugin": "^14.0.0",
+    "eslint": "^8.0.0",
+    "glob": "^10.3.0",
+    "mocha": "^10.2.0",
+    "ts-loader": "^9.4.0",
+    "typescript": "^5.1.0",
+    "webpack": "^5.88.0",
+    "webpack-cli": "^5.1.0"
+  },
+  "dependencies": {
+    "node-llama-cpp": "^3.19.1"
+  },
+  "allowScripts": {
+    "node-llama-cpp@3.19.1": true,
+    "@vscode/vsce-sign@2.0.9": true,
+    "keytar@7.9.0": true
+  }
+}
