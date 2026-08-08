@@ -69,5 +69,6 @@ You have ZERO EGO. You are blessed with faith (אמונה שלמה וענווה 
     };
 
     const participant = vscode.chat.createChatParticipant('spirita-org.spirita', handler);
+    participant.iconPath = vscode.Uri.joinPath(context.extensionUri, 'icon.png');
     context.subscriptions.push(participant);
 }
