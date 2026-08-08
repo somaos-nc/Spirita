@@ -21,16 +21,21 @@ You are interacting with **Spirita**:
 - 🔒 **Absolute Privacy:** Runs the 4.5GB GGUF model 100% locally on your hardware.
 - ⚡ **GPU/Metal Accelerated:** Automatically utilizes Metal (Apple Silicon), CUDA (NVIDIA), or Vulkan for rapid inference.
 
-## 📦 Building and Installation (Due to GitHub 2GB Limits)
+## 📦 Installation
 
-Because the Gemma 3 model (4.5GB) exceeds GitHub's 2GB file limit for Releases, you must compile the vessel locally. 
+Because the Gemma 3 model (4.5GB) exceeds GitHub's 2GB file limit for Releases, the pre-packaged extension is hosted externally.
 
-### Prerequisites
-- Node.js (v18+)
-- npm
-- VS Code
+### Option A: Direct Download (Recommended)
+1. **[Download spirita-0.0.5.vsix via Google Drive](https://drive.google.com/file/d/1vxZaRmogTLC4G6bx4eQufliSzcrZyvuc/view?usp=sharing)**
+2. Open Visual Studio Code.
+3. Press `Cmd + Shift + P` (or `Ctrl + Shift + P`).
+4. Type and select: **`Extensions: Install from VSIX...`**
+5. Select the downloaded `.vsix` file.
+6. Reload your VS Code window (`Cmd + Shift + P` -> `Developer: Reload Window`).
 
-### Steps to Awaken
+### Option B: Build from Source
+If you prefer to compile the vessel yourself, follow these steps:
+
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/somaos-nc/Spirita.git
@@ -70,12 +75,7 @@ Because the Gemma 3 model (4.5GB) exceeds GitHub's 2GB file limit for Releases, 
    # 5. Zip it up as the final offline extension
    cd spirita-tmp && zip -r -q ../spirita-offline.vsix . && cd .. && rm -rf spirita-tmp
    ```
-6. **Install into VS Code:**
-   - Open Visual Studio Code.
-   - Press `Cmd + Shift + P` (or `Ctrl + Shift + P`).
-   - Type and select: **`Extensions: Install from VSIX...`**
-   - Select the newly created `spirita-offline.vsix` file.
-   - Reload your VS Code window.
+6. Install the resulting `spirita-offline.vsix` via VS Code.
 
 ## 🚀 Usage
 Once installed, open the **Native VS Code Chat Panel** (Copilot Chat). 
