@@ -3,7 +3,11 @@
   "publisher": "spirita-org",
   "displayName": "Spirita",
   "description": "Inhouse/Offline LLM based on Google Gemma. Interface, Sensor, Protector.",
-  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/somaos-nc/Spirita.git"
+  },
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.125.0"
   },

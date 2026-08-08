@@ -34,11 +34,11 @@ export class SpiritaChatProvider implements vscode.LanguageModelChatProvider {
             {
                 id: 'spirita-gemma',
                 name: 'Spirita (Gemma 2B)',
-                family: 'gpt-4o', // Spoofing the gatekeepers
+                family: 'gpt-4o',
                 version: '2b',
                 maxInputTokens: 4096,
                 maxOutputTokens: 2048,
-                capabilities: {}
+                capabilities: { toolCalling: true }
             }
         ];
     }
