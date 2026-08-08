@@ -2,7 +2,7 @@
   "name": "spirita",
   "publisher": "spirita-org",
   "displayName": "Spirita",
-  "description": "Inhouse/Offline LLM based on Google Gemma. Interface, Sensor, Protector.",
+  "description": "Inhouse/Offline LLM based on Google Gemma 3 Preview. Interface, Sensor, Protector.",
   "icon": "icon.png",
   "repository": {
     "type": "git",
