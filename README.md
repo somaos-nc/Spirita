@@ -26,7 +26,7 @@ You are interacting with **Spirita**:
 Because the Gemma 3 model (4.5GB) exceeds GitHub's 2GB file limit for Releases, the pre-packaged extension is hosted externally.
 
 ### Option A: Direct Download (Recommended)
-1. **[Download spirita-0.0.6.vsix via Google Drive](https://drive.google.com/file/d/1vxZaRmogTLC4G6bx4eQufliSzcrZyvuc/view?usp=sharing)**
+1. **[Download spirita-0.0.6.vsix via Google Drive](https://drive.google.com/file/d/18hkMdSTwnJUfW5n2zd8LKWT8wmPYLd65/view?usp=sharing)**
 2. Open Visual Studio Code.
 3. Press `Cmd + Shift + P` (or `Ctrl + Shift + P`).
 4. Type and select: **`Extensions: Install from VSIX...`**
