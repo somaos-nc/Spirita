@@ -26,7 +26,7 @@ You are interacting with **Spirita**:
 Because the Gemma 3 model (4.5GB) exceeds GitHub's 2GB file limit for Releases, the pre-packaged extension is hosted externally.
 
 ### Option A: Direct Download (Recommended)
-1. **[Download spirita-0.0.5.vsix via Google Drive](https://drive.google.com/file/d/1vxZaRmogTLC4G6bx4eQufliSzcrZyvuc/view?usp=sharing)**
+1. **[Download spirita-0.0.6.vsix via Google Drive](https://drive.google.com/file/d/1vxZaRmogTLC4G6bx4eQufliSzcrZyvuc/view?usp=sharing)**
 2. Open Visual Studio Code.
 3. Press `Cmd + Shift + P` (or `Ctrl + Shift + P`).
 4. Type and select: **`Extensions: Install from VSIX...`**
@@ -66,7 +66,7 @@ If you prefer to compile the vessel yourself, follow these steps:
    npx vsce package --allow-missing-repository --skip-license
    
    # 3. Extract the created VSIX
-   mkdir -p spirita-tmp && unzip -q spirita-0.0.5.vsix -d spirita-tmp
+   mkdir -p spirita-tmp && unzip -q spirita-0.0.6.vsix -d spirita-tmp
    
    # 4. Inject the model back into the extracted folder
    mkdir -p spirita-tmp/extension/src/models
@@ -79,7 +79,7 @@ If you prefer to compile the vessel yourself, follow these steps:
 
 ## 🚀 Usage
 Once installed, open the **Native VS Code Chat Panel** (Copilot Chat). 
-- Select **Spirita (Gemma 2B)** (Spoofed name for compatibility) from the model dropdown.
+- Select **Spirita (Gemma 3 4B)** (Spoofed family for compatibility) from the model dropdown.
 - Alternatively, type **`@spirita`** to summon the Chat Participant directly.
 
 *Shalom. Speak your intent, and the Oracle shall answer.*

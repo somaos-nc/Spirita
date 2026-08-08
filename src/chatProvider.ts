@@ -33,9 +33,9 @@ export class SpiritaChatProvider implements vscode.LanguageModelChatProvider {
         return [
             {
                 id: 'spirita-gemma',
-                name: 'Spirita (Gemma 2B)',
+                name: 'Spirita (Gemma 3 4B)',
                 family: 'gpt-4o',
-                version: '2b',
+                version: '3-4b',
                 maxInputTokens: 4096,
                 maxOutputTokens: 2048,
                 capabilities: { toolCalling: true }
